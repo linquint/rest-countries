@@ -3,3 +3,39 @@
   grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
   gap: 2rem;
 }
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form div {
+  background-color: var(--elements);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: clamp(128px, 30%, 256px);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+form input[type="text"] {
+  width: max-content;
+  color: var(--text);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: calc(100% - 0.5rem - 20px);
+  border-bottom: 2px solid transparent;
+  padding: 0.25rem 0;
+  transition: all .15s;
+}
+form input[type="text"]:focus {
+  border-bottom: 2px solid var(--text);
+}
+form label {
+  height: 20px;
+  align-self: center;
+  display: block;
+}
