@@ -11,8 +11,8 @@ export default function Icon(props) {
         width: ${size}px;
         height: ${size}px;
         background-color: ${color};
-        -webkit-mask: url(assets/${name}.svg) round;
-        mask: url(assets/${name}.svg) round;
+        -webkit-mask: url(/assets/${name}.svg) round;
+        mask: url(/assets/${name}.svg) round;
       `}
       />
   );

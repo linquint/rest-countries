@@ -17,7 +17,7 @@ export default function Root() {
   return (
     <Html lang="en">
       <Head>
-        <Title>SolidStart - Bare</Title>
+        <Title>Where in the world?</Title>
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -26,8 +26,7 @@ export default function Root() {
           <ErrorBoundary>
             <nav>
               <div>
-                <span>Where in the world?</span>
-                <button>Dark Mode</button>
+                <span style="font-weight: 800">Where in the world?</span>
               </div>
             </nav>
             <Routes>
